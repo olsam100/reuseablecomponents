@@ -1,0 +1,71 @@
+.authcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  gap: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 2rem;
+}
+
+.inputgroup {
+  width: 100%;
+}
+
+.loginInput {
+  padding: 1.5rem 1rem;
+  width: 100%;
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+::placeholder {
+  color: #444444;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: #4fd364;
+  width: 10rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.descriptiontextlink {
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+.svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svgspin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

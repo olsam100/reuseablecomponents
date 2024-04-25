@@ -1,0 +1,183 @@
+.tabContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 75rem;
+  margin: 4rem auto 0 auto;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px #ddd;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabWrapper {
+  width: 100%;
+}
+
+.tabHeader {
+  background-color: #583fcf;
+  position: sticky;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.tabHeader > span {
+  margin: 5px 10px 5px 0;
+  border: 1px solid;
+  cursor: pointer;
+  display: block;
+  padding: 1px 10px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.activeTab {
+  background-color: #ffffff;
+  color: #583fcf;
+}
+
+.tabId {
+  font-size: 1.25rem;
+  margin-left: 0.7rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.demoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.demoContent {
+  white-space: nowrap;
+  width: 100%;
+  font-size: 2rem;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.demoWrapper {
+  padding: 2rem;
+  line-height: 2;
+}
+
+.demoContent span {
+  white-space: wrap;
+  word-break: break-word;
+  display: inline-block;
+}
+
+.selectWrapper {
+  position: relative;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.selected {
+  color: inherit;
+  display: inline;
+  padding: 0.25em 0.4em;
+  background: #ffe184;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+}
+
+.selected:hover {
+  cursor: pointer;
+}
+
+.tabActive {
+  color: green;
+}
+
+.unselectedText {
+  margin-left: 3rem;
+  padding-left: 2rem;
+}
+
+.currentTab {
+  color: #583fcf;
+  font-size: 0.675em;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  margin-left: 8px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.demowrapper ::selection {
+  background-color: #ffe184;
+  color: #583fcf;
+  position: relative;
+}
+
+button {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 0.4rem 0.2rem 0 0.2rem;
+  color: #ffffff;
+}
+
+/* .highlighted-text */
+
+.selected {
+  color: inherit;
+  display: inline;
+  padding: 0.25em 0.4em;
+  background: #ffe184;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+}
+
+.close-icon {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0.3rem;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.selected:hover .close-icon {
+  opacity: 1;
+}
+
+.selectWrapper:hover .close-icon {
+  display: block;
+}
+
+.currentTab {
+  color: #583fcf;
+  font-size: 0.675em;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  margin-left: 8px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}

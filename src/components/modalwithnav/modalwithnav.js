@@ -8,7 +8,7 @@ const Modalwithnav = ({ close }) => {
         <div className='modalwithnavcontainer' onClick={() => close(true)}>
             <div className='modalwithnavwrapper' onClick={(e) => e.stopPropagation()}>
                 <nav className='modalnav'>
-                    <div className="wrapper">
+                    <div className="wrappercontainer">
                         <div className={showContent === 0 ? 'navwrapper active' : 'navwrapper'} onClick={() => setShowContent(0)}>
                             <span>{ <HiHome /> }</span>
                             <p className='navlabel'>home</p>
@@ -36,7 +36,7 @@ const Modalwithnav = ({ close }) => {
                     {showContent === 1 ? 'I am the about content. Component can be rendered here' : ''}
                     {showContent === 2 ? 'I am the contact content. Component can be rendered here' : ''}
                     {showContent === 3 ? 'I am the blog content. Component can be rendered here' : ''}
-                    {showContent === 4 ? 'I am the services content. Component can be rendered here' : ''}
+                    {showContent === 4 ? 'I am the services content. Component to show content of this nav can be rendered here' : ''}
                 </main>
             </div>
         </div>
