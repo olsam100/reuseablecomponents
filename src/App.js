@@ -1,6 +1,7 @@
 // import { useState, useEffect } from 'react'
 // import jwtDecode from 'jwt-decode'
-import Home from 'pages/home'
+import DropdownWrapper from 'components/dropdown/Dropdown'
+// import Home from 'pages/home'
 
 const App = () => {
   // const [user, setUser] = useState()
@@ -14,7 +15,8 @@ const App = () => {
   // }, [])
   return (
     <div>
-      <Home />
+      {/* <Home /> */}
+      <DropdownWrapper />
     </div>
   )
 }
