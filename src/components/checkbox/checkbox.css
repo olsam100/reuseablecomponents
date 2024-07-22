@@ -1,0 +1,35 @@
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  margin-left: 0.8rem;
+}
+
+.checkbox {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-block;
+  border-width: 0.2rem;
+  border-radius: 0.8rem;
+  transition: all 0.2s;
+}
+
+.checkbox.activeCheckbox {
+  background-color: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.checkbox.notActive {
+  background-color: #fefefe;
+  border-width: 0.25rem solid #f1f2f3;
+}
+
+.checkboxItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
