@@ -1,0 +1,36 @@
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField {
+  height: 5.6rem;
+  border-radius: 0.8rem;
+  border: 1.2px solid #f2f2f2;
+  padding: 2.5rem 1.6rem 1.2rem 1.6rem;
+  width: 100%;
+  box-shadow: none;
+  outline: none;
+  font-size: 14px;
+  color: #48494a;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+
+.formlabel {
+  position: absolute;
+  top: 45%;
+  left: 15px;
+  transform: translate(0, -50%);
+  transition: all 0.3s;
+  font-weight: 400;
+  color: #48494a80;
+  line-height: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.inputField:focus + .formlabel,
+.inputField:valid + .formlabel {
+  transform: translate(0, -145%);
+}
